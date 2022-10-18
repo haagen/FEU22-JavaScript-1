@@ -105,7 +105,7 @@ console.log(nySträng);
 
 console.log(s.toUpperCase());
 console.log(s.toLowerCase());
-s = "Hello";
+s = "Hello"; 
 console.log(s.concat("World"));
 console.log("Hello".concat("World"));   // Slå ihop Hello och World till "HellWorld"
 
