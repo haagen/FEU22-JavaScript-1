@@ -63,4 +63,69 @@ let objectKod = {
 };
 objectKod.log();
 
+/*
+    Strängar
+*/
 
+let s1='apostrof';
+let s2="citattecken";
+let s3=`back-tick`;
+
+let s4="Let's do that!";
+s4="Rad ett \
+rad två";
+s4='Let\'s do that';
+s4="Let's do \"that\"";
+console.log(s4);
+s4="Rad ett\nRad två";      // \n = ny rad, \t = tab
+console.log(s4);
+s4 = "Frukter: \n\
+ - banan\n\
+  - apelsin";
+console.log(s4);
+s4 = "Frukter: \n"
+    + "- banan\n"
+    + "- apelsin";
+
+s4 = "33";
+console.log(s4);
+s4 = 3 + s4;    // 3 konverteras till en sträng -> 333
+console.log(s4);
+s4 = 3 * "33";  // 33 konverteras till ett nummer -> 99
+console.log(s4);
+
+let s='Grattis Tisdag!';
+console.log(s.length);  // Stägens längd
+let startPos=8;
+let endPos=14;
+console.log(s.slice(startPos, endPos)); // Ursnitt - ta en sträng mellan start och slut
+console.log(s.replace('Tisdag', 'Onsdag')); // Ersätt
+let nySträng = s.replace('Tisdag', 'Onsdag');
+console.log(nySträng);
+
+console.log(s.toUpperCase());
+console.log(s.toLowerCase());
+s = "Hello";
+console.log(s.concat("World"));
+console.log("Hello".concat("World"));   // Slå ihop Hello och World till "HellWorld"
+
+let firstName="Martin ".trim(); // Tabort whitespace i början och i slutet av strängen
+let lastName="Haagen".trim();
+console.log(firstName+" "+lastName);
+s="    Kalle på Spången !     ";
+
+console.log(s.trimStart()); // Tabort whitespaces i början
+console.log(s.trimEnd()); // Tabort whitespaces i slutet
+
+console.log(s.length);
+console.log(s.padEnd(30, "!"));
+
+s="1234!Martin!12";
+console.log(s.indexOf("!"));
+console.log(s.lastIndexOf("!"));
+
+startPos=s.indexOf("!")+1;
+endPos=s.lastIndexOf("!");
+console.log(s.slice(startPos, endPos));
+
+console.log(s.includes("!"));

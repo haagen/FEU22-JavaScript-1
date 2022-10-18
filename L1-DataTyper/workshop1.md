@@ -10,3 +10,10 @@ Variabler
 6. Skapa en ny variabel - "resultat" - till dela den produkten (arean - genom att multiplicera / gånga bredd och höjd)
 7. Skriv ut resultatet m.h.a. alert-ruta på skärmen
 8. Grattis du har skapat ditt första JavaScript program.
+
+## Facit
+
+let bredd = 10;
+let höjd = 50;
+let resultat = bredd * höjd; 
+alert(resultat);
