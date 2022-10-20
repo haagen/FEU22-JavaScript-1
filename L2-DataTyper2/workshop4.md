@@ -11,7 +11,7 @@ Kontrollflöden if / for
 
 ## Facit
 
-````
+```
 
 console.log('--> Workshop 4 <--');
 
@@ -81,5 +81,3 @@ for(let i=0;i<b.length;i++) { // i: 0 -> 100
 console.log(summa);
 
 ```
-
-````

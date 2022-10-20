@@ -216,4 +216,3 @@ console.log(`Summan är ${sum}`);
 // n%2 == 0 
 // Udda 
 // n%2 == 1
-
