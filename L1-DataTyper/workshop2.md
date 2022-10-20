@@ -6,6 +6,7 @@ Referens kan hittas här på [W3Schools](https://www.w3schools.com/js/js_string_
 
 1. Skapa en ny boiler plate
 2. Skapa en kod som:
+
    1. tilldelar variablen s1 strängen "Mitt namn är <ditt namn>"
    2. med hjälp av strängen s1 - tilldelar den nya strängen s2 samma värde fast med ett utropstecken på slutet (2 olika sätt)
    3. skriver ut längden av båda strängarna till skärmen
@@ -18,10 +19,10 @@ Referens kan hittas här på [W3Schools](https://www.w3schools.com/js/js_string_
    10. du har strängen "Äpplen,Bananer,Mandariner", med hjälp av slice, lastIndexOf, indexOf skapa strängen "Bananer"
 
 3. Bonus! (Tills nästa gång)
-   1. Tilldela en ny variabel (template) värdet "Hej Martin," (du kan så klart använda ditt egent namn). 
+   1. Tilldela en ny variabel (template) värdet "Hej Martin," (du kan så klart använda ditt egent namn).
    2. Använd indexOf() för att hitta " " och "," i template - tilldela dem till variabler
-   3. Använd slice() för att hämta ut namnet med hjälp av variablerna i 3. 
-   4. Använd alert() för att skriv "Du heter Martin!" 
+   3. Använd slice() för att hämta ut namnet med hjälp av variablerna i 3.
+   4. Använd alert() för att skriv "Du heter Martin!"
 
 ## Facit
 
@@ -45,13 +46,13 @@ s3 = "Jag gillar";
 s4 ="JavaScript";
 console.log(s3.concat(" " + s4 + "!"));
 let s5=s3
-    .concat(" ")
-    .concat(s4)
-    .concat("!");
+.concat(" ")
+.concat(s4)
+.concat("!");
 console.log(s5);
 
 // 6
-let s6 = (s3.concat (" glass" ).padEnd(24,"!")); 
+let s6 = (s3.concat (" glass" ).padEnd(24,"!"));
 console.log(s6);
 
 // 7
@@ -68,5 +69,10 @@ console.log(s7.slice(s7.lastIndexOf(",") + 1));
 console.log(s7.slice(s7.lastIndexOf(",") + 1, s7.length));
 console.log(s7.slice(s7.indexOf(",") + 1, s7.lastIndexOf(",")));
 
+// Bonus
 
-
+let template="Hej Martin,";
+let space = template.indexOf(" ");
+let komma = template.indexOf(",");
+let namn = template.slice(space+1,komma);
+alert(namn);
