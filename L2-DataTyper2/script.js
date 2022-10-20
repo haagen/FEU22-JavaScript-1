@@ -131,5 +131,89 @@ console.log(undefined === null);
  a6[0]=a6[0]+1;
  console.log(a6);
 
- 
+/*****************************************
+ * 7. Kontrollflöden - if
+ *****************************************/
+ console.log('>> 7. Kontrollflöden - if <<');
+/*
+
+if(expression)
+    om-sant-kod;
+
+if(expression)
+    om-sant-kod
+else
+    annars-kod;
+
+*/
+
+let expression = false;
+if(expression) 
+    console.log('Expression var "sant"!'); 
+
+if(expression)
+    console.log('Expression var "sant"!')
+else 
+    console.log('Expression var "falskt"!');
+
+n = 10;
+if(n>5)
+    console.log(`N=${n}`);
+
+expression=false;
+n=1; 
+/*
+if(expression)
+    if(n>5)
+        console.log('N större än 5');
+else 
+    console.log('Vi hamnade i else!');
+*/
+
+{
+    console.log('1');
+    console.log('2');
+}
+if(expression) {
+    console.log('1');
+    console.log('2');
+} else {
+    console.log('3');
+    console.log('4');    
+}
+
+/*****************************************
+ * 8. Kontrollflöden - for
+ *****************************************/
+ console.log('>> 8. Kontrollflöden - for <<');
+
+ /*
+    for(initsierar; vilkor; slutgiltigt utryck (räknar))
+        uttryck; {}
+ */
+
+for(let counter=0; counter < 10; counter++) {
+    console.log(counter);
+}
+
+for(let counter=0; counter<10;) {
+    console.log(counter);
+    counter+=1;
+}
+
+//let a8 = [1, 2, 3, 4, 5];
+let a8 = [1, 4, 6, 2, 6]; 
+let sum = 0;
+for(let i=0; i<a8.length; i++ ) { // lenght = 5
+    sum += a8[i];
+}
+console.log(`Summan är ${sum}`);
+
+// [ 1 ] [ 4 ] [ 6 ] [ 2 ] [ 6 ]  - Värdena
+//   0     1     2     3     4    - Position (i)
+
+// Hur vet jag att när ett jämt tal? 
+// n%2 == 0 
+// Udda 
+// n%2 == 1
 
