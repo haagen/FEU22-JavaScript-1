@@ -48,14 +48,14 @@ for (i = 0; i < 10; i++)
 console.log(a1);
 /*
 // Uppgift #4
-// Alternative 1
+// Alternativ 1
 for ( let i=0; i<a1.length; i++ ) {
     a1[i]=a1.length -i;       // a[0] = 10 - 0 = 10, a[1] = 10 - 1 = 9
 }
     console.log(a1)
 */
 
-// Alternative 2
+// Alternativ 2
 for(let i=0;i<a1.length/2;i++) { // 0 -> 4
     let t = a1[i]; // Spara tillfälligt
     a1[i] = a1[a1.length-i-1]; // Ta värdet i cell 9 och spara i 0, 8 i 1, osv
