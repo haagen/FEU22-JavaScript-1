@@ -5,7 +5,8 @@ Frivilliga extra övningsuppgifter.
 1. Skapa en funktion som beräknar omkretsen på en cirkel. 
     - Funktionen skall heta **getCircumference**
     - Den skall ta en parameter **radie**
-    - Formlen för att beräkna radien är ```2 * Math.PI * radie````
+    - Formlen för att beräkna radien är 
+    ```2 * Math.PI * radie```
     - Omkretsen skall returneras
 
 2. Skapa en loop som räknar från 3 till 17
@@ -37,7 +38,8 @@ Frivilliga extra övningsuppgifter.
 
 8. Skapa en funktion som skriver ut ditt bil-objekt på ett snyggt sätt. 
     - Skapa en funktion som tar en bil som parameter
-    - Skapa och returnera en sträng som ser ut så här "<make> som har gått <milage>"
+    - Skapa och returnera en sträng som ser ut så här: 
+    ```<make> som har gått <milage>```
     - Returnera strängen
 
 ## Facit
