@@ -114,3 +114,34 @@ console.log('Mitt saldo = ' + minskaBeloppMedN(100, 50)); // 50 i konsollen
 console.log('lokalVariabel = ' + minskaBeloppMedN(lokalVariabel, 50));  // -30
 console.log('lokalVariabel = ' + lokalVariabel); 
 console.log('globaltBelopp = ' + globaltBelopp); // ?
+
+/************************************
+ * 2. Objekt & JSON 
+
+let object = {
+    key1: value1,
+    key2: value2
+ };
+
+************************************/
+
+let användare = {
+    name: "Martin Haagen",
+    id: 1,
+    pokemonCards: [ 1, 2, 3, 4 ]
+};
+console.log(användare.name);    // Skriver ut Martin Hagen
+console.log(användare["name"]); // Skriver ut Martin Haagen
+
+användare.gillarMarmelad = true;
+console.log(användare);
+delete användare.pokemonCards;
+console.log(användare);
+
+console.log(användare.datorModell);
+
+let användareJSONsträng = JSON.stringify(användare);
+console.log(användareJSONsträng);
+
+let användareObjekt = JSON.parse(användareJSONsträng);
+console.log(användareObjekt);
