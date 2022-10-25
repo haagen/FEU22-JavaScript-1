@@ -25,3 +25,52 @@ Mer funktioner, JSON och Objekt.
 ```
 [{"namn":"Fido","ras":"Border Collie","vikt":12},{"namn":"Labbe","ras":"Labbe","vikt":4},{"namn":"Snudden","ras":"Fox Terrier","vikt":1},{"namn":"Loppan","ras":"Tax","vikt":41},{"namn":"Bubben","ras":"Rottweiler","vikt":24},{"namn":"Ronja","ras":"Bearded Collie","vikt":41}]
 ```
+
+
+## Facit
+
+````
+
+// --- 
+// Uppgift 1
+let hund = {
+    namn: "Fido",
+    ras: "Border Collie",
+    vikt: 17
+};
+console.log(hund);
+
+/// Uppgift 2
+function skapaHund(parameterNamn, parameterRas, parameterVikt) {
+    let hund = {
+        namn: parameterNamn,
+        ras: parameterRas,
+        vikt: parameterVikt
+    };
+    return hund;
+}
+let nyHund = skapaHund("Plutten", "Dobberman", 30);
+console.log(nyHund);
+console.log(skapaHund("Fido", "Pudel", 23));
+
+// Uppgift 3
+// const alt1 = [ 1, 2, 3... ];
+const alt1 = [
+    {
+        name: "Plutten",
+        ras: "Dobberman",
+        vikt: 30
+    },
+    {
+        name: "Fido",
+        name: "Pudel",
+        vikt: 23
+    }
+];
+
+const alt2 = [
+    skapaHund("Plutten", "Dobberman", 30),
+    skapaHund("Fido", "Pudel", 23)
+];
+
+```
