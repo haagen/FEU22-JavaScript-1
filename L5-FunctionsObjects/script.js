@@ -185,3 +185,27 @@ log(fido);
 fido.setOwner('Martin');
 fido.setCountry('Sweden');
 
+
+/*
+*  4. Document Object Model - DOM
+*/
+
+const para1 = document.getElementsByTagName('p');
+for(let i=0;i<para1.length;i++){
+    let myP = para1[i];
+    log('getElementsByTagName node contents: ' + myP.textContent );  // myP.innerHTML (skrive ut HTML)
+}
+
+const para2 = document.getElementsByClassName('viktigt');
+log(para2);
+
+const para3 = document.getElementById("status");
+log(para3);
+
+// tag
+// .class
+// #id
+let para4 = document.querySelectorAll("p.viktigt");  
+log(para4);
+para4 = document.querySelectorAll('.viktigt');
+log(para4);
