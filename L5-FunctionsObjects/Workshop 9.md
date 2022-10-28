@@ -27,8 +27,8 @@ textContent, innerHTML - för innehåll i noderna.
    - Skapa en div (id="resultat", class="hidden") som har en p (class="content") som har en span (class="obs").
 
 2. Skapa en kod. Använd getElementById() för att hämta din rubrik. Skriv rubriken till consolen.
-3. Skapa en kod. Använd getElementByClassName() för att hämta alla paragraferna med en content class. Hur många har vi?
-4. Skapa en kod. Använd getElementByTagName() för att hämta rubriken (h1) och skriv ut den i en alert() ruta.
+3. Skapa en kod. Använd getElementsByClassName() för att hämta alla paragraferna med en content class. Hur många har vi?
+4. Skapa en kod. Använd getElemenstByTagName() för att hämta rubriken (h1) och skriv ut den i en alert() ruta.
 5. Skapa en kod. Använd querySelectorAll() för att hämta elementet/elementen:
    - a: span (class="obs") - skriv ut dess innehåll i console.log
    - b: p (class="content") - alla, skriv ut allas innehåll i console.log
@@ -40,3 +40,5 @@ textContent, innerHTML - för innehåll i noderna.
    - Returnera
 
 ## Facit
+
+Se workshop9.html och workshop9.js
