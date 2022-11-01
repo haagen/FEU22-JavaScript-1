@@ -73,4 +73,85 @@ const alt2 = [
     skapaHund("Fido", "Pudel", 23)
 ];
 
+const listaAvHundar = [
+    skapaHund("Plutten", "Dobberman", 30),
+    skapaHund("Fido", "Pudel", 23),
+    skapaHund("Ragnar", "Tax", 8),
+    skapaHund("Maja", "Labrador", 12),
+    skapaHund("Boss", "Border Collie", 17),
+    skapaHund("Snuttan", "Irländsk Setter", 21)
+];
+console.log(listaAvHundar);
+
+// Uppgift 4
+function medelVikt(hundlista) {
+    let summa=0;
+    for(let i=0;i<hundlista.length;i++) {
+        let hund = hundlista[i];
+        summa += hund.vikt;
+    }
+    let medelvikt = summa / hundlista.length;
+    return medelvikt;
+}
+
+console.log('Medelvikt = ' + medelVikt(listaAvHundar));
+
+// Uppgift 5
+function generellTärning(minstaTal, högstaTal) {
+
+    let min = Math.floor(minstaTal);
+    if (isNaN(min)){
+        console.log('minstaTal är inte ett tal');
+        return undefined;
+    }
+    let max = Math.floor(högstaTal);
+    if (isNaN(min)){
+        console.log('högstaTal är inte ett tal');
+        return undefined;
+    }
+    return min + Math.floor(Math.random()*(max-min+1));
+}
+
+function slumpNyVikt(){
+    for (let i=0;i<listaAvHundar.length;i++) {
+        let hund = listaAvHundar[i];
+        let slumptal = generellTärning(1, 45);
+        hund.vikt = slumptal;
+    }
+}
+slumpNyVikt();
+console.log(listaAvHundar);
+
+// Uppgift 6
+
+function konverteraTillJSON(hundLista) {
+    let s = JSON.stringify(hundLista);
+    return s;
+}
+
+let jsonSträng = konverteraTillJSON(listaAvHundar);
+console.log(jsonSträng);
+
+// Uppgift 7
+
+jsonSträng = '[{"namn":"Fido","ras":"Border Collie","vikt":12},{"namn":"Labbe","ras":"Labbe","vikt":4},{"namn":"Snudden","ras":"Fox Terrier","vikt":1},{"namn":"Loppan","ras":"Tax","vikt":41},{"namn":"Bubben","ras":"Rottweiler","vikt":24},{"namn":"Ronja","ras":"Bearded Collie","vikt":41}]';
+let hundListaUppg7 = JSON.parse(jsonSträng);
+function hittaMaxVikt(hundLista) {
+    let störstHund;
+    for(let i=0;i<hundLista.length;i++) {
+        let hund = hundLista[i];
+        if(störstHund == undefined) {
+            störstHund = hund;
+        } else {
+            if(hund.vikt > störstHund.vikt) {
+                störstHund = hund;
+            }
+        }
+    }
+    return störstHund;
+}
+
+let tjockastHund = hittaMaxVikt(hundListaUppg7);
+console.log(tjockastHund.namn);
+
 ```
