@@ -18,3 +18,5 @@ Mer DOM övningar.
    a) tips - du kan titta om resultat-div:en är tom innan du stoppar in något i den.
 
 ## Facit
+
+Se workshop11.html / workshop11.js
