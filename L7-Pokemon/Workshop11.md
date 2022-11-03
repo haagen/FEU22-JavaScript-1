@@ -8,8 +8,8 @@ Mer DOM övningar.
    b) En div - id = result
 3. I ditt JavaScript - skapa en funktion som heter "createImageClick". Funktionen tar inga parametrar.
 4. Skapa en funktion som du kallar för init - den tar inga parametrar - skall köras automatiskt när scriptet körs.
-5. I init() - skapa en event listner för knappen - den skall anropa funktionen du skapade i 3.
-6. Lägg till en bild i din result div (genom att använda document.createElement funktionen).
+5. I init() - skapa en "event listener" för knappen - den skall anropa funktionen du skapade i 3.
+6. Lägg till en bild i din result div (genom att använda document.createElement funktionen) när användaren klickar på knappen.
    a) Sök upp div:en med id "result".
    b) Skapa en ny tag med hjälp av document.createElement()
    c) Ge den nya taggen attribut (src) så att den kan visa en bild.
