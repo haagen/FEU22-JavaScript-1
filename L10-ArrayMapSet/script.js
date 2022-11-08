@@ -162,3 +162,34 @@ let lightDogs = myDogs.filter(function(dog){
     return dog.weight < 10;
 });
 console.log(lightDogs);
+
+
+/* 
+ *   Map
+ */
+
+let myMap = new Map(); 
+myMap.set('name', 'Martin');
+myMap.set('age', 27);
+myMap.set('dog', { name: "Boss", breed: "Border Collie", weight: 17});
+console.log(myMap);
+myMap.delete('age');
+console.log(myMap);
+console.log(`Martins dog is called ${myMap.get('dog').name }`);
+
+console.log(myMap.keys());
+console.log(myMap.values());
+
+
+/*
+ * Set
+ */
+
+let mySet = new Set();
+mySet.add(12);
+mySet.add('name');
+console.log(mySet);
+console.log(mySet.size);
+mySet.add(12);
+console.log(mySet.size);
+console.log(mySet.has(12));
