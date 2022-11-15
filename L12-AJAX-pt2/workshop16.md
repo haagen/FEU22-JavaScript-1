@@ -31,3 +31,5 @@ Ge användaren ett förslag på en aktivitet.
 7. Tänk på att svaret från servern kommer som en text-sträng som innehåller JSON. På valfritt sätt konvertera svaret till JavaScript format. Och skriv ut "activity" i console.log.
 
 ## Facit
+
+Se workshop16.html och workshop16.js för lösningsförslag.

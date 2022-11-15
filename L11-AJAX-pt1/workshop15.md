@@ -35,3 +35,5 @@ Ge användaren ett förslag på en aktivitet.
 9. Bonus! Förändra din kod så att din xhr automatiskt konverterar ditt svar till json. (responseType)
 
 ## Facit
+
+Se workshop15.html och workshop15.js. 
