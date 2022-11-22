@@ -1,4 +1,4 @@
-const apiKey = '8298c6e32edaba4033335d115b4f212f';
+const apiKey = '<change-to-a-valid-token>';
 
 $(document).ready((event) => {              // This will be run when the DOM is ready
     $('#searchBtn').on('click', () => {     // Create a click handler for the "Sök"-button
