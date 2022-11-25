@@ -1,4 +1,4 @@
-const apiKey = '9198a31e5a76c8f75d18d60a27544721';
+const apiKey = '<change to your token here instead>';
 const loc = 'Rebbetuaröd';
 
 // https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${apiKey}`,
