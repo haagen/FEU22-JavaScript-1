@@ -18,7 +18,7 @@ for (let hund of minaHundar.values()) {
 }
 
 // Iterator on Set
-let mySet = new Set();                          // Creates a new array
+let mySet = new Set();                          // Creates a new set
 mySet.add('ett');
 mySet.add('två');
 mySet.add('tre');
